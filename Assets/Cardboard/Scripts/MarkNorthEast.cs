@@ -9,7 +9,7 @@ public class MarkNorthEast : MonoBehaviour {
 	private float delay = 0.0f; 
 	
 	void Start() {
-		mark = GameObject.Find ("RightMark");
+		mark = GameObject.Find ("NorthEastMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
 	}

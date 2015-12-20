@@ -9,7 +9,7 @@ public class MarkSouthWest : MonoBehaviour {
 	private float delay = 0.0f; 
 	
 	void Start() {
-		mark = GameObject.Find ("LeftMark");
+		mark = GameObject.Find ("SouthWestMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
 	}
@@ -28,4 +28,5 @@ public class MarkSouthWest : MonoBehaviour {
 			Application.LoadLevel(6); // South West
 		}
 	}
+
 }

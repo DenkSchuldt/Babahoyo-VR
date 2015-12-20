@@ -10,7 +10,7 @@ public class MarkSouthEast : MonoBehaviour {
 	private float delay = 0.0f; 
 	
 	void Start() {
-		mark = GameObject.Find ("RightMark");
+		mark = GameObject.Find ("SouthEastMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
 	}
@@ -20,17 +20,14 @@ public class MarkSouthEast : MonoBehaviour {
 		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
 		if (!isLookedAt) { 
 			delay = Time.time + 2.0f;
-			Debug.Log("NOT LOOKING");
 			mark.GetComponent<Renderer> ().material.color = Color.green;
 		} else {
-			transform.RotateAround(transform.position, Vector3.forward, Time.deltaTime * 150f);
-			Debug.Log("LOOKING");
+			// transform.RotateAround(transform.position, Vector3.forward, Time.deltaTime * 150f);
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
-			Application.LoadLevel(1);
+			Application.LoadLevel(5); // South East
 		}
 	}
-	
 
 }

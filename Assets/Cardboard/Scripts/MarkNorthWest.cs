@@ -9,7 +9,7 @@ public class MarkNorthWest : MonoBehaviour {
 	private float delay = 0.0f; 
 	
 	void Start() {
-		mark = GameObject.Find ("LeftMark");
+		mark = GameObject.Find ("NorthWestMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
 	}
@@ -25,7 +25,7 @@ public class MarkNorthWest : MonoBehaviour {
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
-			Application.LoadLevel(3);  // North West
+			Application.LoadLevel(3); // North West
 		}
 	}
 
