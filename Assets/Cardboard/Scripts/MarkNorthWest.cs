@@ -3,13 +3,30 @@ using System.Collections;
 
 public class MarkNorthWest : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	private GameObject mark;
+	private CardboardHead head;
+	private Vector3 startingPosition;
+	private float delay = 0.0f; 
 	
+	void Start() {
+		mark = GameObject.Find ("LeftMark");
+		head = Camera.main.GetComponent<StereoController>().Head;
+		startingPosition = transform.localPosition;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void Update() {
+		RaycastHit hit;
+		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
+		if (!isLookedAt) { 
+			delay = Time.time + 2.0f;
+			mark.GetComponent<Renderer> ().material.color = Color.green;
+		} else {
+			// transform.RotateAround(transform.position, Vector3.forward, Time.deltaTime * 150f);
+			mark.GetComponent<Renderer> ().material.color = Color.red;
+		}
+		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
+			Application.LoadLevel(3);  // North West
+		}
 	}
+
 }
