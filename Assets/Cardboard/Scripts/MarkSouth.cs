@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Star : MonoBehaviour {
+public class MarkSouth : MonoBehaviour {
 
 	private GameObject mark;
 	private CardboardHead head;
