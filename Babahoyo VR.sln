@@ -1,0 +1,46 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{4362D32A-DE21-6612-7F74-7C36B63CF522}") = "Babahoyo VR", "Assembly-CSharp.csproj", "{D1537AAE-DA91-C96E-6B60-17C8A3153EC3}"
+EndProject
+Project("{4362D32A-DE21-6612-7F74-7C36B63CF522}") = "Babahoyo VR", "Assembly-CSharp-Editor.csproj", "{023BDE79-B2E5-6841-E22B-9B4452738C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1537AAE-DA91-C96E-6B60-17C8A3153EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1537AAE-DA91-C96E-6B60-17C8A3153EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1537AAE-DA91-C96E-6B60-17C8A3153EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1537AAE-DA91-C96E-6B60-17C8A3153EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023BDE79-B2E5-6841-E22B-9B4452738C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023BDE79-B2E5-6841-E22B-9B4452738C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023BDE79-B2E5-6841-E22B-9B4452738C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023BDE79-B2E5-6841-E22B-9B4452738C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																												GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal
