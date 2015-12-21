@@ -7,8 +7,13 @@ public class MarkSouth : MonoBehaviour {
 	private CardboardHead head;
 	private Vector3 startingPosition;
 	private float delay = 0.0f; 
-	
+	private Gyroscope gyro;
+
 	void Start() {
+		if (SystemInfo.supportsGyroscope) {
+			gyro = Input.gyro;
+			gyro.enabled = true;
+		}
 		mark = GameObject.Find ("SouthMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
@@ -25,7 +30,7 @@ public class MarkSouth : MonoBehaviour {
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
-			Application.LoadLevel(4); // South
+			Application.LoadLevel(3); // South
 		}
 	}
 

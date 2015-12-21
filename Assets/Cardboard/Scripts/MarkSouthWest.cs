@@ -25,7 +25,7 @@ public class MarkSouthWest : MonoBehaviour {
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
-			Application.LoadLevel(6); // South West
+			Application.LoadLevel(5); // South West
 		}
 	}
 

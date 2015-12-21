@@ -25,7 +25,7 @@ public class MarkNorthEast : MonoBehaviour {
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
-			Application.LoadLevel(2); // North East
+			Application.LoadLevel(1); // North East
 		}
 	}
 }
