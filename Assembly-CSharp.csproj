@@ -55,6 +55,7 @@
      <Compile Include="Assets\Cardboard\Scripts\CardboardProfile.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Fade.cs" />
      <Compile Include="Assets\Cardboard\Scripts\GazeInputModule.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\GyroscopeEnable.cs" />
      <Compile Include="Assets\Cardboard\Scripts\MarkNorth.cs" />
      <Compile Include="Assets\Cardboard\Scripts\MarkNorthEast.cs" />
      <Compile Include="Assets\Cardboard\Scripts\MarkNorthWest.cs" />

@@ -4,11 +4,13 @@ using System.Collections;
 public class MarkNorthEast : MonoBehaviour {
 
 	private GameObject mark;
+	private GameObject fade;
 	private CardboardHead head;
 	private Vector3 startingPosition;
 	private float delay = 0.0f; 
 	
 	void Start() {
+		fade = GameObject.Find ("Fade");
 		mark = GameObject.Find ("NorthEastMark");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
@@ -25,6 +27,8 @@ public class MarkNorthEast : MonoBehaviour {
 			mark.GetComponent<Renderer> ().material.color = Color.red;
 		}
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
+			float fadeTime = fade.GetComponent<Fade>().BeginFade(1);
+			//yield return new WaitForSeconds(fadeTime);
 			Application.LoadLevel(1); // North East
 		}
 	}

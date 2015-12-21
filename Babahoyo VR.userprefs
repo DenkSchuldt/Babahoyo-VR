@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Cardboard/Scripts/Fade.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Cardboard/Scripts/MarkSouth.cs">
     <Files>
-      <File FileName="Assets/Cardboard/Scripts/MarkSouthEast.cs" Line="29" Column="43" />
-      <File FileName="Assets/Cardboard/Scripts/MarkNorthEast.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/MarkNorthWest.cs" Line="28" Column="30" />
-      <File FileName="Assets/Cardboard/Scripts/MarkNorth.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/MarkSouthWest.cs" Line="1" Column="1" />
-      <File FileName="Assets/Cardboard/Scripts/MarkSouth.cs" Line="1" Column="1" />
+      <File FileName="Assets/Cardboard/Scripts/MarkSouthEast.cs" Line="32" Column="6" />
+      <File FileName="Assets/Cardboard/Scripts/MarkNorthEast.cs" Line="31" Column="6" />
+      <File FileName="Assets/Cardboard/Scripts/MarkNorthWest.cs" Line="31" Column="6" />
+      <File FileName="Assets/Cardboard/Scripts/MarkNorth.cs" Line="31" Column="6" />
+      <File FileName="Assets/Cardboard/Scripts/MarkSouthWest.cs" Line="31" Column="6" />
+      <File FileName="Assets/Cardboard/Scripts/MarkSouth.cs" Line="36" Column="6" />
       <File FileName="Assets/Cardboard/Scripts/Fade.cs" Line="28" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
