@@ -45,12 +45,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cardboard\DemoScene\FPS.cs" />
+     <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Cardboard.cs" />
      <Compile Include="Assets\Cardboard\Scripts\CardboardEye.cs" />
      <Compile Include="Assets\Cardboard\Scripts\CardboardHead.cs" />
      <Compile Include="Assets\Cardboard\Scripts\CardboardPostRender.cs" />
      <Compile Include="Assets\Cardboard\Scripts\CardboardPreRender.cs" />
      <Compile Include="Assets\Cardboard\Scripts\CardboardProfile.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardSwitch.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Fade.cs" />
      <Compile Include="Assets\Cardboard\Scripts\GazeInputModule.cs" />
      <Compile Include="Assets\Cardboard\Scripts\GyroscopeEnable.cs" />
