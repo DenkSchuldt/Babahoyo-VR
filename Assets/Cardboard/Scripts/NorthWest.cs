@@ -15,6 +15,11 @@ public class NorthWest : MonoBehaviour {
 		fade = GameObject.Find ("Fade");
 		head = Camera.main.GetComponent<StereoController>().Head;
 		startingPosition = transform.localPosition;
+		if (Toolbox.Instance.mode == 1) {
+			Cardboard.SDK.VRModeEnabled = true;
+		} else {
+			Cardboard.SDK.VRModeEnabled = false;
+		}
 	}
 	
 	void Update() {

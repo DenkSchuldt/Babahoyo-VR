@@ -62,11 +62,13 @@
      <Compile Include="Assets\Cardboard\Scripts\NorthWest.cs" />
      <Compile Include="Assets\Cardboard\Scripts\Pose3D.cs" />
      <Compile Include="Assets\Cardboard\Scripts\RadialUndistortionEffect.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\Singleton.cs" />
      <Compile Include="Assets\Cardboard\Scripts\South.cs" />
      <Compile Include="Assets\Cardboard\Scripts\SouthEast.cs" />
      <Compile Include="Assets\Cardboard\Scripts\SouthWest.cs" />
      <Compile Include="Assets\Cardboard\Scripts\StereoController.cs" />
      <Compile Include="Assets\Cardboard\Scripts\StereoRenderEffect.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\Toolbox.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\BaseAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\BaseCardboardDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\BaseVRDevice.cs" />

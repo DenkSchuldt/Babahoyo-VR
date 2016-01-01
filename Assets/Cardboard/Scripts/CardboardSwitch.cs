@@ -24,6 +24,11 @@ public class CardboardSwitch : MonoBehaviour {
 		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
 			delay = Time.time + 2.0f;
 			Cardboard.SDK.VRModeEnabled = !Cardboard.SDK.VRModeEnabled;
+			if (Cardboard.SDK.VRModeEnabled) {
+				Toolbox.Instance.mode = 1;
+			} else {
+				Toolbox.Instance.mode = 0;
+			}
 		}
 	}
 
