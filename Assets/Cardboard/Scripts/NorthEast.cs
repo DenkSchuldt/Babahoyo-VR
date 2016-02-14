@@ -33,9 +33,9 @@ public class NorthEast : MonoBehaviour {
 			lerp += Time.deltaTime;
 			gameObject.GetComponent<Renderer>().material.color = Color.Lerp(Color.white, Color.green, lerp/2);
 		}
-		if ((Cardboard.SDK.CardboardTriggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
+		if ((Cardboard.SDK.Triggered && isLookedAt) || (isLookedAt && Time.time>delay)) {
 			float fadeTime = fade.GetComponent<Fade>().BeginFade(1);
-			Application.LoadLevel(1); // North East
+			Application.LoadLevel(2); // North East
 		}
 	}
 }
